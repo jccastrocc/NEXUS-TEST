@@ -1,0 +1,35 @@
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    color: #2c3e50;
+    font-size: 28px;
+    margin-top: 40px;
+  }
+  
+  h2 {
+    color: #34495e;
+    margin-top: 20px;
+  }
+  
+  p, ul {
+    line-height: 1.6;
+  }
+  
+  ul {
+    list-style-type: square;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  hr {
+    border: 1px solid #ccc;
+    margin: 40px 0;
+  }
+  

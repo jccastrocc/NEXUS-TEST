@@ -1,0 +1,25 @@
+<div class="toggle-buttons">
+  <div class="button-group">
+    <button class="btn-group-item left" [class.active]="selected === 'propuesta1'" 
+    (click)="selectPropuesta('propuesta1')">Plataforma de Gestión de Proyectos Ágiles</button>
+
+    <button class="btn-group-item middle" [class.active]="selected === 'propuesta2'" 
+    (click)="selectPropuesta('propuesta2')">Sistema de Gestión de Clínicas Médicas</button>
+
+    <button class="btn-group-item right" [class.active]="selected === 'propuesta3'" 
+    (click)="selectPropuesta('propuesta3')">Plataforma de Soporte y Asesoría Legal</button>
+  </div>
+</div>
+
+<!-- Contenido de las propuestas -->
+<div class="propuesta-content">
+  <ng-container *ngIf="selected === 'propuesta1'">
+    <app-propuesta-gestion-proyectos-agiles></app-propuesta-gestion-proyectos-agiles>
+  </ng-container>
+  <ng-container *ngIf="selected === 'propuesta2'">
+    <app-propuesta-clinicas-medicas></app-propuesta-clinicas-medicas>
+  </ng-container>
+  <ng-container *ngIf="selected === 'propuesta3'">
+    <app-propuesta-asesoria-legal></app-propuesta-asesoria-legal>
+  </ng-container>
+</div>

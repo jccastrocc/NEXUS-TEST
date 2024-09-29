@@ -1,0 +1,73 @@
+.toggle-buttons {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+
+.propuesta-content {
+  margin-top: 20px;
+
+  padding: 20px;
+  background-color: #f2f2f7;
+  border-radius: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+
+/* Estilos para la agrupación de botones */
+.button-group {
+  display: inline-flex;
+  border-radius: 50px; /* Redondeado elegante */
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-group-item {
+  background-color: #f5f5f5; /* Fondo suave */
+  color: #333;
+  border: 1px solid #ddd;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  outline: none;
+}
+
+.btn-group-item:not(:last-child) {
+  border-right: 1px solid #ddd; /* Línea divisoria */
+}
+
+.btn-group-item.left {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.btn-group-item.middle {
+  border-radius: 0; /* Botón del medio sin borde redondeado */
+}
+
+.btn-group-item.right {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+/* Hover con color más claro */
+.btn-group-item:hover {
+  background-color: #eaeaea;
+}
+
+/* Efecto de botón activo */
+.btn-group-item.active {
+  background-color: #c0a062; /* Color dorado suave */
+  color: #fff;
+  border: none;
+}
+
+/* Efecto al hacer foco */
+.btn-group-item:focus {
+  box-shadow: 0 0 0 4px rgba(192, 160, 98, 0.4); /* Sombra dorada suave */
+}
+
